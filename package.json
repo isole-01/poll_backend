@@ -1,0 +1,39 @@
+{
+  "name": "untitled7",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node dist/index.js",
+    "build": "babel src -d lib",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "devweb": "set PASSWORD=858585&& nodemon --exec babel-node src/a.js",
+    "heroku-postbuild": "babel src --out-dir dist",
+    "dev": "nodemon --exec babel-node src/a.js",
+    "devb": "nodemon --exec babel-node src/b.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/preset-env": "^7.9.0"
+  },
+  "dependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/node": "^7.8.7",
+    "@babel/polyfill": "^7.8.7",
+    "apollo-cache-inmemory": "^1.6.5",
+    "apollo-client": "^2.6.8",
+    "apollo-link": "^1.2.14",
+    "apollo-link-error": "^1.1.13",
+    "apollo-link-http": "^1.5.17",
+    "apollo-link-ws": "^1.0.20",
+    "apollo-server": "^2.11.0",
+    "graphql": "^14.6.0",
+    "graphql-tag": "^2.10.3",
+    "mongoose": "^5.9.9",
+    "nodemon": "^2.0.2",
+    "subscriptions-transport-ws": "^0.9.16",
+    "uuid": "^7.0.3"
+  }
+}
